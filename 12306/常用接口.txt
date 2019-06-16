@@ -1,0 +1,36 @@
+1、检查用户是否保持登录成功     https://kyfw.12306.cn/otn/login/checkUser
+2、点击预定    https://kyfw.12306.cn/otn/leftTicket/submitOrderRequest
+3、获取联系人     https://kyfw.12306.cn/otn/confirmPassenger/getPassengerDTOs
+4、检查选票人信息  https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo
+5、提交订单  https://kyfw.12306.cn/otn/confirmPassenger/getQueueCount
+6、确认订单  https://kyfw.12306.cn/otn/confirmPassenger/confirmSingleForQueue
+7、排队等待  https://kyfw.12306.cn/otn/confirmPassenger/queryOrderWaitTime
+8、订单结果  https://kyfw.12306.cn/otn/confirmPassenger/resultOrderForDcQueue
+
+验证码拉取 接口:Get https://kyfw.12306.cn/passport/captcha/captcha-image?login_site=E&module=login&rand=sjrand&0.11080113
+
+验证码验证 接口:Post https://kyfw.12306.cn/passport/captcha/captcha-check
+
+用户名密码认证 接口:Post https://kyfw.12306.cn/passport/web/login
+
+获取apptk 接口:Post https://kyfw.12306.cn/passport/web/auth/uamtk
+
+获取登录结果 接口:Post https://kyfw.12306.cn/otn/uamauthclient
+
+余票查询 接口:Get https://kyfw.12306.cn/otn/leftTicket/query[A-Z]
+
+车票信息确认 接口: Post https://kyfw.12306.cn/otn/leftTicket/submitOrderRequest
+
+InitDC(单程跟往返接口不一样 本文统一单程) 接口:Post https://kyfw.12306.cn/otn/confirmPassenger/initDc
+
+获取乘客信息 接口:Post https://kyfw.12306.cn/otn/confirmPassenger/getPassengerDTOs
+
+确认订单信息 接口:Post https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo
+
+获取排队信息 接口:Post https://kyfw.12306.cn/otn/confirmPassenger/getQueueCount
+
+进入队伍  接口:Post https://kyfw.12306.cn/otn/confirmPassenger/confirmSingleForQueue
+
+查询抢票结果 接口:Post https://kyfw.12306.cn/otn/confirmPassenger/queryOrderWaitTime
+
+查询订单信息 接口:Post https://kyfw.12306.cn/otn/queryOrder/queryMyOrderNoComplete
